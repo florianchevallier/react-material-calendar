@@ -183,12 +183,10 @@ class Calendar extends Component {
 	}
 
 	onCreateEvent = () => {
-		if(this.props.onCreateEvent != null && this.state.newEvent != null) {
-			this.props.onCreateEvent(this.state.newEvent.start, this.state.newEvent.end);
-			this.setState({ 
-				newEvent: null
-			});
-		}
+		this.props.onCreateEvent(this.state.newEvent.start, this.state.newEvent.end);
+		this.setState({ 
+			newEvent: null
+		});
 	}
 }
 
