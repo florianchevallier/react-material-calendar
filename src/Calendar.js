@@ -54,7 +54,6 @@ function getTimeOrDefault(date: ?Date): number {
 class Calendar extends Component {
 	props: Props;
 	static propTypes = {
-		date: React.PropTypes.instanceOf(Date),
 		onDateChange: React.PropTypes.func,
 		mode: React.PropTypes.string,
 		onCreateEvent: React.PropTypes.func,

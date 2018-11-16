@@ -1,6 +1,6 @@
 {
   "name": "react-material-calendar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component inspired by google calendar app",
   "main": "lib/index.js",
   "scripts": {
@@ -24,21 +24,21 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-1": "^6.16.0",
-    "enzyme": "^2.7.1",
-    "flow-bin": "^0.40.0",
-    "jest": "^19.0.2",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-test-renderer": "^15.4.2",
+    "enzyme": "^3.7.0",
+    "flow-bin": "^0.86.0",
+    "jest": "^23.6.0",
+    "react": "^16.6.3",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.6.3",
+    "react-test-renderer": "^16.6.3",
     "rimraf": "^2.5.4"
   },
   "dependencies": {
-    "react-swipeable-views": "^0.11.0"
+    "react-swipeable-views": "^0.13.0"
   },
   "peerDependencies": {
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "author": "",
   "license": "MIT"
