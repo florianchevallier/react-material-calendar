@@ -2,6 +2,7 @@
 import type { EventElement } from './types';
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import SwipeableViews from 'react-swipeable-views';
 import { virtualize } from 'react-swipeable-views-utils';
@@ -54,9 +55,10 @@ function getTimeOrDefault(date: ?Date): number {
 class Calendar extends Component {
 	props: Props;
 	static propTypes = {
-		onDateChange: React.PropTypes.func,
-		mode: React.PropTypes.string,
-		onCreateEvent: React.PropTypes.func,
+		date: PropTypes.instanceOf(Date),
+		onDateChange: PropTypes.func,
+		mode: PropTypes.string,
+		onCreateEvent: PropTypes.func,
 	}
 	state: State;
 
