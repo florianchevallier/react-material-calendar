@@ -213,7 +213,6 @@ type Props = {
 var DayEvents = (props: Props) => {
 	return renderHoursDividers(props.date, props.onHourDividerClick)
 		.concat(renderEventsItems(props.events, props.date))
-		.concat(renderNewEvent(props.date, props.newEvent, props.onCreateEvent));
 }
 
 export default DayEvents;
