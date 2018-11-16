@@ -180,13 +180,16 @@ class Calendar extends Component {
 
 	onCalendarClick = (start: Date, end: Date) => {
 		this.setState({ newEvent : { start: start, end: end }});
+		this.props.onCreateEvent(start, end);
 	}
 
 	onCreateEvent = () => {
-		this.props.onCreateEvent(this.state.newEvent.start, this.state.newEvent.end);
-		this.setState({ 
-			newEvent: null
-		});
+		if(this.props.onCreateEvent != null && this.state.newEvent != null) {
+			this.props.onCreateEvent(this.state.newEvent.start, this.state.newEvent.end);
+			this.setState({ 
+				newEvent: null
+			});
+		}
 	}
 }
 
